@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_login_navigation"
+    app:startDestination="@id/nav_signIn">
+
+    <fragment
+        android:id="@+id/nav_signIn"
+        android:name="com.wantech.medihelp.ui.signLog.sigIn.SignInFragment"
+        android:label="Sign in Account"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_nav_signIn_to_nav_forgotPassword"
+            app:destination="@id/nav_forgotPassword" />
+        <action
+            android:id="@+id/action_nav_signIn_to_nav_signUp"
+            app:destination="@id/nav_signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_forgotPassword"
+        android:name="com.wantech.medihelp.ui.signLog.forgotPassword.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_nav_forgotPassword_to_nav_signIn"
+            app:destination="@id/nav_signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_signUp"
+        android:name="com.wantech.medihelp.ui.signLog.sigUp.SignUpFragment"
+        android:label="Sign Up Account" >
+        <action
+            android:id="@+id/action_nav_signUp_to_nav_signIn"
+            app:destination="@id/nav_signIn" />
+    </fragment>
+</navigation>
