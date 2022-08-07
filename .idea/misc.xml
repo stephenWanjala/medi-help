@@ -5,14 +5,18 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_forward.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2365" />
+        <entry key="app/src/main/res/drawable/search_bg.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/white_bg.xml" value="0.2365" />
         <entry key="app/src/main/res/drawable/whitesh_bg.xml" value="0.2365" />
         <entry key="app/src/main/res/layout-land/fragment_forgot_password.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout-notnight/activity_sign_login.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/activity_sign_login.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/doctor_type_item.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/fragment_privacy_policy.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.2552083333333333" />

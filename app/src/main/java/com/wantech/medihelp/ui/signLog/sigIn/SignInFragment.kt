@@ -1,5 +1,6 @@
 package com.wantech.medihelp.ui.signLog.sigIn
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.wantech.medihelp.MainActivity
 import com.wantech.medihelp.R
 import com.wantech.medihelp.databinding.FragmentSignInBinding
 
@@ -37,6 +39,10 @@ private  lateinit var binding: FragmentSignInBinding
             toForgotPassword.setOnClickListener {
                 findNavController()
                     .navigate(SignInFragmentDirections.actionNavSignInToNavForgotPassword())
+            }
+            signInButton.setOnClickListener {
+                startActivity(Intent(requireActivity(),MainActivity::class.java))
+                requireActivity().finish()
             }
         }
     }

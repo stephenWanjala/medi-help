@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.privacypolicy.PrivacyPolicyFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="what we collect from you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mature language and environment. Since its creation in 2011, Kotlin has developed continuously, not only as a language
+but as a whole ecosystem with robust tooling. Now it's seamlessly integrated in Android Studio and is actively used by
+many companies for developing Android applications.\n
+Kotlin support in Android Jetpack and other libraries. KTX extensions add Kotlin language features, such as coroutines,
+extension functions, lambdas, and named parameters, to existing Android libraries.
+Interoperability with Java. You can use Kotlin along with the Java programming language in your applications without
+needing to migrate all your code to Kotlin.\n
+Support for multiplatform development. You can use Kotlin for developing not only Android but also iOS, backend, and
+web applications.\n Enjoy the benefits of sharing the common code among the platforms.
+Code safety. Less code and better readability lead to fewer errors. The Kotlin compiler detects these remaining errors,
+making the code safe."
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="what we collect from you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kotlin/JS provides the ability to transpile your Kotlin code, the Kotlin standard library, and any compatible dependencies to
+JavaScript. The current implementation of Kotlin/JS targets ES5.\n
+The recommended way to use Kotlin/JS is via the kotlin.js and kotlin.multiplatform Gradle plugins. They let you easily set up
+and control Kotlin projects targeting JavaScript in one place. This includes essential functionality such as controlling the
+bundling of your application, adding JavaScript dependencies directly from npm, and more. To get an overview of the"
+                android:textColor="@color/primary" />
+
+            <Button
+                android:id="@+id/acceptBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/white"
+                android:text="Accept our privacy &amp; policy"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

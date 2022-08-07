@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "954789920954",
+    "project_id": "medi-help-93444",
+    "storage_bucket": "medi-help-93444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954789920954:android:98d67b871558503222c283",
+        "android_client_info": {
+          "package_name": "com.wantech.medihelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954789920954-97n485hn6vdcmsfd4v08rd84tg9qdkt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrjPtAU3klDtdfuJRqRoMCTtqy2FvnPk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954789920954-97n485hn6vdcmsfd4v08rd84tg9qdkt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

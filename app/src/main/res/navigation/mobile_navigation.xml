@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_nav_notifications"
-            app:destination="@id/nav_notifications" />
+            app:destination="@id/nav_emergency" />
         <action
             android:id="@+id/action_navigation_home_to_navigation_search"
             app:destination="@id/navigation_search" />
@@ -28,13 +28,18 @@
         tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/nav_notifications"
-        android:name="com.wantech.medihelp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/nav_emergency"
+        android:name="com.wantech.medihelp.ui.emergency.EmergencyFragment"
+        android:label="Emergency"
+        tools:layout="@layout/fragment_emergency" />
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.wantech.medihelp.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.wantech.medihelp.ui.notificataion.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>
