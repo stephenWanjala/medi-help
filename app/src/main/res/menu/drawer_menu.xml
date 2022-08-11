@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myAppointments"
+            android:icon="@drawable/ic_appoint"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_changePassword"
+            android:icon="@drawable/ic_key"
+            android:title="Change my Password" />
+        <item
+            android:id="@+id/nav_card"
+            android:icon="@drawable/ic_card"
+            android:title="My Card" />
+
+
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_alarm_24"
+            android:title="Pill reminder" />
+        <item
+            android:id="@+id/nav_helpSupport"
+            android:icon="@drawable/ic_settings"
+            android:title="Help and support" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/ic_power"
+            android:title="Sign Out" />
+    </group>
+
+</menu>

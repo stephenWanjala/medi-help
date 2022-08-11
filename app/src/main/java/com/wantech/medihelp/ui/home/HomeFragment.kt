@@ -1,13 +1,13 @@
 package com.wantech.medihelp.ui.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.wantech.medihelp.R
 import com.wantech.medihelp.data.DocList
 import com.wantech.medihelp.data.SpecialistAdapter
 import com.wantech.medihelp.databinding.FragmentHomeBinding
@@ -28,6 +28,7 @@ class HomeFragment : Fragment() {
 
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
+
         return binding.root
     }
 
@@ -43,6 +44,8 @@ class HomeFragment : Fragment() {
 
 
     }
+
+
 
 
 }

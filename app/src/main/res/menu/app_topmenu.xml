@@ -6,6 +6,6 @@
     <item android:title="notification"
         app:showAsAction="ifRoom|withText"
         android:iconTint="@color/white"
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/toNotificationMenu"
         android:icon="@drawable/ic_notifications_black_24dp"/>
 </menu>

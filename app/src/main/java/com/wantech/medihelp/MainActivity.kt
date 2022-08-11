@@ -2,20 +2,24 @@ package com.wantech.medihelp
 
 
 import android.os.Bundle
-import android.view.View
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.wantech.medihelp.databinding.ActivityMainBinding
+
 // this is our main activity
-class MainActivity : AppCompatActivity() {
+class MainActivity : DrawerActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
+    private lateinit var appBarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -27,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
+         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
                 R.id.navigation_profile,
@@ -40,13 +44,30 @@ class MainActivity : AppCompatActivity() {
 
         navView.setupWithNavController(navController)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        if (navController.currentDestination?.id==R.id.navigation_home){
-            binding.appBarLayout.visibility=View.GONE
 
-        } else{
-            binding.appBarLayout.visibility=View.VISIBLE
-        }
+
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp(appBarConfiguration )||super.onSupportNavigateUp()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.app_topmenu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.toNotificationMenu->{
+                navController.navigate(R.id.notificationFragment)
+                true
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
+            }
+        }
+    }
 
 }

@@ -8,18 +8,6 @@
     tools:context=".ui.home.HomeFragment">
 
 
-    <ImageView
-        android:id="@+id/ic_menu_open_drawer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:backgroundTint="@color/white"
-        android:src="@android:drawable/ic_menu_sort_by_size"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -30,27 +18,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/toNotificationImageButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ic_menu_open_drawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/toNotificationImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="45dp"
-        android:background="#00000000"
-        android:contentDescription="notification button"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:src="@drawable/ic_notifications_black_24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.appcompat.widget.SearchView
