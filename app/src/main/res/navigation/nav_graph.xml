@@ -38,13 +38,13 @@
         android:label="Your Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/notificationFragment"
+        android:id="@+id/nav_notifications"
         android:name="com.wantech.medihelp.ui.notificataion.NotificationFragment"
         android:label="Notifications"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/nav_myAppointments"
         android:name="com.wantech.medihelp.ui.apointment.MyAppointmentFragment"
-        android:label="fragment_my_appointment"
+        android:label="My Appointments"
         tools:layout="@layout/fragment_my_appointment" />
 </navigation>

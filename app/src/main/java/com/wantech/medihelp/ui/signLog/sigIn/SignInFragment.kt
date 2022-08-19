@@ -7,9 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.wantech.medihelp.MainActivity
 import com.wantech.medihelp.databinding.FragmentSignInBinding
-import com.wantech.medihelp.tesDrawer.Drawer
+import com.wantech.medihelp.Drawer
 
 
 class SignInFragment : Fragment() {

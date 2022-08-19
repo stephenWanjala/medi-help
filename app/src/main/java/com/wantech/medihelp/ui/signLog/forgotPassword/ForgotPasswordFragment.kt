@@ -1,20 +1,14 @@
 package com.wantech.medihelp.ui.signLog.forgotPassword
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.wantech.medihelp.R
 
 class ForgotPasswordFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = ForgotPasswordFragment()
-    }
-
-    private lateinit var viewModel: ForgotPasswordViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,10 +17,5 @@ class ForgotPasswordFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_forgot_password, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ForgotPasswordViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }

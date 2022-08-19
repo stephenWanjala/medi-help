@@ -1,6 +1,5 @@
 package com.wantech.medihelp
 
-
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -14,27 +13,26 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
-import com.wantech.medihelp.databinding.ActivityMainBinding
+import com.wantech.medihelp.databinding.ActivityDrawerBinding
 
 
-class MainActivity : AppCompatActivity() {
+class Drawer : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityDrawerBinding
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityDrawerBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navViewInDrawer
-        val toolbar=binding.includedAppbar.toolbar
-        val bottomNavigationView: BottomNavigationView =
-            binding.includedAppbar.bottomNavView
-        val navigationView:NavigationView=binding.navViewInDrawer
-        setSupportActionBar(toolbar)
 
+        setSupportActionBar(binding.appBarDrawer.toolbar)
+
+
+        val drawerLayout: DrawerLayout = binding.drawerLayout
+        val navView: NavigationView = binding.navView
+       navController = findNavController(R.id.nav_host_fragment_content_drawer)
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -42,40 +40,38 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_profile,
                 R.id.navigation_search,
                 R.id.nav_emergency,
-            ),
-            drawerLayout
+                R.id.nav_myAppointments,
+                R.id.nav_notifications,
+
+                ), drawerLayout
         )
-
-
-
-        navController = findNavController(R.id.nav_host_fragment_activity_main)
-
-        bottomNavigationView.setupWithNavController(navController)
+        val bottomNavView: BottomNavigationView = binding.appBarDrawer.bottomNavView
         setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+        bottomNavView.setupWithNavController(navController)
+    }
 
-
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.drawer, menu)
+        return true
     }
 
     override fun onSupportNavigateUp(): Boolean {
+//        navController = findNavController(R.id.nav_host_fragment_content_drawer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.app_topmenu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.toNotificationMenu -> {
-                navController.navigate(R.id.notificationFragment)
+            R.id.nav_notification -> {
+                navController
+                    .navigate(R.id.nav_notifications)
                 true
             }
-            else -> {
-                super.onOptionsItemSelected(item)
-            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
+
 
 }
