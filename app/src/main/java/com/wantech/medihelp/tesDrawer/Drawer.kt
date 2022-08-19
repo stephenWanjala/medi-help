@@ -40,6 +40,7 @@ class Drawer : AppCompatActivity() {
                 R.id.navigation_profile,
                 R.id.navigation_search,
                 R.id.nav_emergency,
+                R.id.nav_myAppointments
 
             ), drawerLayout
         )
