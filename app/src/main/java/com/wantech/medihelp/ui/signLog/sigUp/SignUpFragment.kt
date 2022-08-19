@@ -21,7 +21,7 @@ class SignUpFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSignUpBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -45,10 +45,6 @@ class SignUpFragment : Fragment() {
 
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }

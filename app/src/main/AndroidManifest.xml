@@ -16,7 +16,7 @@
         android:theme="@style/Theme.MediHelp"
         tools:targetApi="31">
         <activity
-            android:name=".DrawerActivity"
+            android:name=".tesDrawer.Drawer"
             android:exported="false"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.MediHelp.NoActionBar" />
@@ -32,7 +32,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

@@ -14,10 +14,13 @@
 
         <!-- Customize your theme here. -->
     </style>
+
     <style name="Theme.MediHelp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="Theme.MediHelp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.MediHelp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

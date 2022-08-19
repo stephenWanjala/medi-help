@@ -11,22 +11,31 @@
         <entry key="app/src/main/res/layout-land/fragment_forgot_password.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout-notnight/activity_sign_login.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/activity_home_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/activity_sign_login.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/apbar_drawerlaout.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/app_bar_drawer.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/appbar_drawer_layout.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/content_drawer.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/content_home_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/content_layout.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/doctor_type_item.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/fragment_emergency.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_privacy_policy.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/nav_header_drawer2.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/nav_header_home_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/menu/app_topmenu.xml" value="0.2546875" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2546875" />

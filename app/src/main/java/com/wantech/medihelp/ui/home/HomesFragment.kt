@@ -1,21 +1,21 @@
 package com.wantech.medihelp.ui.home
 
 import android.os.Bundle
-import android.view.*
-import androidx.core.view.MenuProvider
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.wantech.medihelp.R
 import com.wantech.medihelp.data.DocList
 import com.wantech.medihelp.data.SpecialistAdapter
-import com.wantech.medihelp.databinding.FragmentHomeBinding
+import com.wantech.medihelp.databinding.FragmentHHomeBinding
 
-class HomeFragment : Fragment() {
+class HomesFragment : Fragment() {
     private lateinit var linearLayoutManager: RecyclerView.LayoutManager
     private lateinit var docAdapter: SpecialistAdapter
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: FragmentHHomeBinding
 
 
     override fun onCreateView(
@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this)[HomeViewModel::class.java]
 
-        binding = FragmentHomeBinding.inflate(layoutInflater)
+        binding = FragmentHHomeBinding.inflate(layoutInflater)
 
 
         return binding.root
@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         linearLayoutManager =
-            LinearLayoutManager(this@HomeFragment.context, LinearLayoutManager.HORIZONTAL, false)
+            LinearLayoutManager(this@HomesFragment.context, LinearLayoutManager.HORIZONTAL, false)
         docAdapter = SpecialistAdapter(DocList.listOfDoctorSpecialist)
         binding.docRecyclerView.apply {
             adapter = docAdapter
@@ -44,8 +44,6 @@ class HomeFragment : Fragment() {
 
 
     }
-
-
 
 
 }
