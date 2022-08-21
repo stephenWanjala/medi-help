@@ -10,9 +10,7 @@ import com.wantech.medihelp.R
 
 class MyAppointmentFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = MyAppointmentFragment()
-    }
+
 
     private lateinit var viewModel: MyAppointmentViewModel
 
@@ -23,10 +21,6 @@ class MyAppointmentFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_my_appointment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MyAppointmentViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }

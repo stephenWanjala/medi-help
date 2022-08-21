@@ -1,16 +1,16 @@
-package com.wantech.medihelp.data
+package com.wantech.medihelp.data.utils
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.wantech.medihelp.R
+import com.wantech.medihelp.data.DoctorSpecialistsGroup
 import de.hdodenhof.circleimageview.CircleImageView
 
 class SpecialistAdapter(
-    private val listOfTempSpecialist: ArrayList<DoctorSpecialist>
+    private val listOfTempSpecialist: ArrayList<DoctorSpecialistsGroup>
 ) : RecyclerView.Adapter<SpecialistAdapter.SpecialistViewHOlder>() {
 
     inner class SpecialistViewHOlder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -23,7 +23,7 @@ class SpecialistAdapter(
         return SpecialistViewHOlder(
             LayoutInflater
                 .from(parent.context)
-                .inflate(R.layout.doctor_type_item, parent, false)
+                .inflate(R.layout.image_and_text_card, parent, false)
         )
     }
 

@@ -1,6 +1,4 @@
-package com.wantech.medihelp.data
-
-import android.util.TimeUtils
+package com.wantech.medihelp.data.models
 
 data class Ambulance(
     val ambulanceName:String,

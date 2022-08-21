@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.wantech.medihelp.data.DocList
-import com.wantech.medihelp.data.SpecialistAdapter
+import com.wantech.medihelp.data.utils.SpecialistAdapter
 import com.wantech.medihelp.databinding.FragmentHHomeBinding
 
 class HomesFragment : Fragment() {
@@ -33,7 +33,7 @@ class HomesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         linearLayoutManager =
             LinearLayoutManager(this@HomesFragment.context, LinearLayoutManager.HORIZONTAL, false)
-        docAdapter = SpecialistAdapter(DocList.listOfDoctorSpecialist)
+        docAdapter = SpecialistAdapter(DocList.listOfDoctorSpecialistsGroups)
         binding.docRecyclerView.apply {
             adapter = docAdapter
             layoutManager = linearLayoutManager

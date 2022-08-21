@@ -21,11 +21,15 @@
         <entry key="app/src/main/res/layout/content_home_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/content_layout.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/doctor_type_item.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/fragment_ambulance.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/fragment_doctors.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_emergency.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_h_home.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/fragment_health_care.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/fragment_hospitals.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_my_appointment.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2552083333333333" />
@@ -35,6 +39,7 @@
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.2552083333333333" />
+        <entry key="app/src/main/res/layout/image_and_text_card.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/nav_header_drawer2.xml" value="0.2552083333333333" />
         <entry key="app/src/main/res/layout/nav_header_home_drawer.xml" value="0.2552083333333333" />

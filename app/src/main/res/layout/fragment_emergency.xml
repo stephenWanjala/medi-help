@@ -7,34 +7,18 @@
     android:background="@color/primary"
     tools:context=".ui.emergency.EmergencyFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center"
-        android:text="Lets Find Your \nSpecialist"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="8dp" />
-
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/home_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/search_bg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:queryHint="Search Doctor"
         app:searchHintIcon="@drawable/ic_search" />
 
@@ -56,34 +40,22 @@
         app:layout_constraintVertical_bias="0.39">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/doc_recycler_view"
+            android:id="@+id/emergency_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:orientation="horizontal" />
 
-        <TextView
+        <fragment
+            android:id="@+id/navHostEmergency"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Top Doctor"
-            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/emergency_navigation_graph"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/topDoctorsRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Nearby Doctor"
-            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
     </LinearLayout>
 
 

@@ -1,6 +1,6 @@
 package com.wantech.medihelp.data
 
-data class DoctorSpecialist(
+data class DoctorSpecialistsGroup(
     val specialisation:String,
     val specImage:Int
 )

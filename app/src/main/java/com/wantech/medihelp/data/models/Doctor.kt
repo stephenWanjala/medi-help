@@ -1,4 +1,6 @@
-package com.wantech.medihelp.data
+package com.wantech.medihelp.data.models
+
+import com.wantech.medihelp.data.DoctorSpecialization
 
 
 data class Doctor(
@@ -6,7 +8,7 @@ data class Doctor(
     val specialization: DoctorSpecialization,
     val location: String,
     val mobileContact: String,
-    val hospitalAttendsTo:Hospital?=null,
+    val hospitalAttendsTo: Hospital?=null,
     val rating: Float = 0f,
     val totalPatients: Int = 0,
     val yearsOfExperience: Int = 0,
