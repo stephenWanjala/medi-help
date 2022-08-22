@@ -7,29 +7,27 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.wantech.medihelp.R
 import com.wantech.medihelp.data.utils.EmergencyListAdapter
+import com.wantech.medihelp.databinding.FragmentEmergencyBinding
 
 
 class EmergencyFragment : Fragment() {
-    //    private lateinit var binding: FragmentEmergencyBinding
+    private lateinit var binding: FragmentEmergencyBinding
     private lateinit var emergencyRecyclerView: RecyclerView
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        binding = FragmentEmergencyBinding.inflate(layoutInflater)
 
-        val rootView = inflater.inflate(R.layout.fragment_emergency, container, false)
-        emergencyRecyclerView=rootView.findViewById(R.id.emergency_recyclerView)
-
-        return rootView
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        emergencyRecyclerView
+        binding.emergencyRecyclerView
             .apply {
                 adapter = EmergencyListAdapter()
                 layoutManager = LinearLayoutManager(
