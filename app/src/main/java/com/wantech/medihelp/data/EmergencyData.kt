@@ -7,6 +7,6 @@ object EmergencyData {
         EmergencyModel("Hospital", R.drawable.ic_medicine_),
         EmergencyModel("Ambulance",R.drawable.ambulance),
         EmergencyModel("Doctor",R.drawable.ic_doctor),
-        EmergencyModel("healthCare",R.drawable.ic_medical_care_movn)
+        EmergencyModel("healthCare",R.drawable.ic_health_care)
     )
 }

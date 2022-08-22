@@ -5,22 +5,36 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.wantech.medihelp.R
+import com.wantech.medihelp.data.utils.HospitalsAdapter
+import com.wantech.medihelp.databinding.FragmentHospitalsBinding
 
 
 class HospitalsFragment : Fragment() {
+    private lateinit var binding:FragmentHospitalsBinding
+//    private lateinit var  hospitalsRec:RecyclerView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hospitals, container, false)
+
+      val view=inflater.inflate(R.layout.fragment_hospitals,container,false)
+       val  hospitalsRec:RecyclerView=view.findViewById(R.id.hospitals_rec)
+        hospitalsRec.apply {
+            adapter=HospitalsAdapter()
+            layoutManager=LinearLayoutManager(requireContext())
+        }
+        return  view
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+
     }
 
 
