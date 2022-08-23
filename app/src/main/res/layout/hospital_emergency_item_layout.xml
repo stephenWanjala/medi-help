@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -32,27 +32,38 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_margin="8dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:orientation="vertical">
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hospitalImage"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:id="@+id/hospitalName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Bungoma district hospital rfereal kaska"
+                    android:text="Bungoma district hospital jjajjaja  referral kaska"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:orientation="horizontal">
 
                     <ImageView
@@ -66,10 +77,10 @@
                         android:id="@+id/hospitalLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8844a3"
                         android:shadowColor="#141111"
                         android:text="Bungoma Town"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#8844a3" />
 
                 </LinearLayout>
 
@@ -77,17 +88,18 @@
                     android:id="@+id/hospitalHotline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_marginBottom="8dp"
                     android:text="+2547235621923"
                     android:textColor="@color/bluish"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textStyle="bold" />
 
 
             </LinearLayout>
 
 
-        </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
