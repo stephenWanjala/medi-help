@@ -71,7 +71,10 @@ class EmergencyFragment :
                 }
 
                 "Doctor" -> {
-
+                    binding.emergencyItemListRec.apply {
+                        adapter = HealthCareAdapter()
+                        layoutManager = LinearLayoutManager(requireContext())
+                    }
                 }
 
                 "healthCare" -> {
