@@ -7,6 +7,11 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/bluish"
+        android:id="@+id/fragment_healthCare"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />

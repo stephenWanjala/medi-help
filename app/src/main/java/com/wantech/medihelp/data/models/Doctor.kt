@@ -12,5 +12,6 @@ data class Doctor(
     val rating: Float = 0f,
     val totalPatients: Int = 0,
     val yearsOfExperience: Int = 0,
-    val timeAvailable: String
+    val timeAvailable: String,
+    val personImage:Int?
 )

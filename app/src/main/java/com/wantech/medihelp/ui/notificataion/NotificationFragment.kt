@@ -23,10 +23,6 @@ class NotificationFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_notification, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this)[NotificationViewModel::class.java]
-        // TODO: Use the ViewModel
-    }
+
 
 }

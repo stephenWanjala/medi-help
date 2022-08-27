@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.wantech.medihelp.R
 import com.wantech.medihelp.data.Hospitals
 
-class HospitalsAdapter() : RecyclerView.Adapter<HospitalsAdapter.HospitalsViewHolder>() {
+class HospitalsAdapter : RecyclerView.Adapter<HospitalsAdapter.HospitalsViewHolder>() {
     private val hosList = Hospitals.hospitals
 
     inner class HospitalsViewHolder(private val itemView: View) :
