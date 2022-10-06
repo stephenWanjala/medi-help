@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.wantech.medihelp.ui.home.HomesFragment"
+        android:name="com.wantech.medihelp.feature_home.presentation.components.HomesFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_h_home" >
         <action
@@ -23,13 +23,13 @@
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.wantech.medihelp.ui.search.SearchFragment"
+        android:name="com.wantech.medihelp.feature_search.presentation.components.SearchFragment"
         android:label="Your Search here"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/nav_emergency"
-        android:name="com.wantech.medihelp.ui.emergency.EmergencyFragment"
+        android:name="com.wantech.medihelp.feature_emergency.presentation.components.EmergencyFragment"
         android:label="Emergency"
         tools:layout="@layout/fragment_emergency" />
     <fragment
@@ -39,7 +39,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/nav_notifications"
-        android:name="com.wantech.medihelp.ui.notificataion.NotificationFragment"
+        android:name="com.wantech.medihelp.feature_notification.presentation.components.NotificationFragment"
         android:label="Notifications"
         tools:layout="@layout/fragment_notification" />
     <fragment

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bluish"
-    tools:context=".ui.home.HomesFragment">
+    tools:context=".feature_home.presentation.components.HomesFragment">
 
 
     <TextView

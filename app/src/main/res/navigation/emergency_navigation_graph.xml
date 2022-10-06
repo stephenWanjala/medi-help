@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/hospitalsFragment"
-        android:name="com.wantech.medihelp.ui.hospitals.HospitalsFragment"
+        android:name="com.wantech.medihelp.feature_hospital.presentation.components.HospitalsFragment"
         android:label="fragment_hospitals"
         tools:layout="@layout/fragment_hospitals" />
     <fragment
         android:id="@+id/ambulanceFragment"
-        android:name="com.wantech.medihelp.ui.ambulance.AmbulanceFragment"
+        android:name="com.wantech.medihelp.feature_ambulance.presentation.AmbulanceFragment"
         android:label="fragment_ambulance"
         tools:layout="@layout/fragment_ambulance" />
     <fragment
         android:id="@+id/doctorsFragment"
-        android:name="com.wantech.medihelp.ui.doctors.DoctorsFragment"
+        android:name="com.wantech.medihelp.feature_doctor.presentation.components.DoctorsFragment"
         android:label="fragment_doctors"
         tools:layout="@layout/fragment_doctors" />
     <fragment
